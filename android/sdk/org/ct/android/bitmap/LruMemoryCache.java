@@ -16,6 +16,7 @@
 package org.ct.android.bitmap;
 
 import java.util.LinkedHashMap;
+import java.util.Locale;
 import java.util.Map;
 
 public class LruMemoryCache<K, V> {
@@ -309,6 +310,6 @@ public class LruMemoryCache<K, V> {
 	public synchronized final String toString() {
         int accesses = hitCount + missCount;
         int hitPercent = accesses != 0 ? (100 * hitCount / accesses) : 0;
-        return String.format("LruMemoryCache[maxSize=%d,hits=%d,misses=%d,hitRate=%d%%]",maxSize, hitCount, missCount, hitPercent);
+        return String.format(Locale.getDefault(),"LruMemoryCache[maxSize=%d,hits=%d,misses=%d,hitRate=%d%%]",maxSize, hitCount, missCount, hitPercent);
     }
 }
