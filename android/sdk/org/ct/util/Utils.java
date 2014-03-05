@@ -39,7 +39,7 @@ import android.support.v4.app.Fragment;
 import android.telephony.TelephonyManager;
 import android.util.Log;
 
-public class Utils extends CommonUtils{
+public class Utils extends JavaUtils{
 	public static final String TAG = "Utils";
 	
 	public static void actionGalleryFromActivity(final int result, final Activity activity) {

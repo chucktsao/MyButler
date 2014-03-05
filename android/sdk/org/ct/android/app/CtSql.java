@@ -13,5 +13,7 @@ package org.ct.android.app;
 public class CtSql {
 	static final String TAG = "CtSql";
 	
+	//事务处理
+	
 	
 }

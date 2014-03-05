@@ -8,7 +8,7 @@ import java.io.FileInputStream;
 import org.ct.java.http.HttpConnUtils;
 import org.ct.java.http.IHttpCallback;
 import org.ct.java.http.JsonUtils;
-import org.ct.util.CommonUtils;
+import org.ct.util.JavaUtils;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -49,7 +49,7 @@ public class UploadThread extends BaseThread {
 			return;
 		}
 		
-		String end = CommonUtils.getExtensionName(filePath);
+		String end = JavaUtils.getExtensionName(filePath);
 		if(null==end||"".equals(end)){
 			mCallback.onFailed(mRequestType,"上传文件有误");
 			return;	

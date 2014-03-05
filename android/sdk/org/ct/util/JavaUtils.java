@@ -23,9 +23,8 @@ import java.util.Locale;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import android.content.Context;
 
-public class CommonUtils {
+public class JavaUtils {
 	public static final String TAG = "CommonUtils";
 
 	public static String getTime() {
@@ -281,7 +280,7 @@ public class CommonUtils {
 	}
 
 	// 将对象转化为2进制数组
-	public synchronized static byte[] object2byte(Context context, Object object) {
+	public synchronized static byte[] object2byte(Object object) {
 		if (object == null) {
 			return null;
 		}
@@ -301,7 +300,7 @@ public class CommonUtils {
 
 	// 将 2进制数组转化为对象
 	@SuppressWarnings("unchecked")
-	public synchronized static <T extends Object> T byte2object(Context context, byte[] b, Class<T> clazz) {
+	public synchronized static <T extends Object> T byte2object(byte[] b, Class<T> clazz) {
 		if (b == null || b.length < 1) {
 			return null;
 		}

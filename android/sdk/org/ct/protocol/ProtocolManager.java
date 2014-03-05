@@ -14,6 +14,7 @@ package org.ct.protocol;
 import org.ct.java.http.IHttpCallback;
 import org.ct.java.thread.BaseThread;
 import org.ct.java.thread.ProtocolThread;
+import org.ct.java.thread.ThreadPoolUtil;
 
 
 import android.content.Context;
